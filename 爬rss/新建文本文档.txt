@@ -1,0 +1,39 @@
+		
+		
+		if(oSession.fullUrl.indexOf("https://www.inoreader.com")>-1)
+		{
+			//FiddlerObject.alert(oSession.fullUrl);
+
+			var today: Date = new Date();
+			
+			
+			if(oSession.GetRequestBodyAsString().IndexOf("&xjxargs[]=Bfalse&xjxargs[]=%5B")>-1)
+			{
+				oSession.SaveRequestBody("C:\\Users\\win10\\Desktop\\Request\\"+today.getTime()+".txt");
+				//FiddlerObject.alert(today.getTime());
+			}
+			
+		}		
+		
+		
+		
+		
+		
+		
+		
+		//FiddlerObject.alert(oSession.fullUrl);
+		if(oSession.fullUrl.indexOf("https://www.inoreader.com")>-1)
+		{
+			//FiddlerObject.alert(oSession.fullUrl);
+			oSession.utilDecodeResponse();
+			var today: Date = new Date();
+			
+			
+			if(oSession.GetResponseBodyAsString().IndexOf("set_seen_ids")>-1)
+			{
+				oSession.SaveResponseBody("C:\\Users\\win10\\Desktop\\rss\\"+today.getTime()+".txt");
+				//FiddlerObject.alert(today.getTime());
+				UI.actRemoveAllSessions();
+			}
+			
+		}		

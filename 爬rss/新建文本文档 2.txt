@@ -1,0 +1,29 @@
+http://www.telerik.com/docs/default-source/fiddler/addons/fiddlersyntaxsetup.exe
+
+
+
+
+function clock(){
+
+
+var aaa= document.querySelectorAll(".article_subscribed");
+for( var i = 0  ; i < aaa.length ; i++ ){
+    aaa[i].remove();
+}
+
+
+var aaa1= document.querySelectorAll(".ad_title");
+for( var i = 0  ; i < aaa1.length ; i++ ){
+    aaa1[i].remove();
+}
+
+
+var aaa2= document.querySelectorAll(".block_article_ad");
+for( var i = 0  ; i < aaa2.length ; i++ ){
+    aaa2[i].remove();
+}
+
+
+
+}
+var t = setInterval(clock,1000*60);

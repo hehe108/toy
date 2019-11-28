@@ -1,0 +1,6 @@
+1.https://www.virustotal.com/
+2.有没有证书
+3.启动项
+4.......
+
+https://docs.microsoft.com/zh-cn/sysinternals/

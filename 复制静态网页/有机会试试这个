@@ -1,0 +1,7 @@
+wget -r -p -np -k -P ~/tmp/ http://java-er.com
+
+
+
+wget -c -r www.xxx.org/
+
+wget -P /root

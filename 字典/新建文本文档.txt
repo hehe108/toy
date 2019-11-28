@@ -1,0 +1,41 @@
+破解WiFi密码基础姿势合集
+
+
+
+
+
+https://www.cnblogs.com/lifengfneg/p/5992649.html
+
+
+https://blog.csdn.net/xfxf996/article/details/81034657
+
+
+
+win环境下使用wifipr配合Tirom发布的9.8G字典，家庭电脑一般情况下二十几个小时就可以跑
+
+http://www.anywlan.com/thread-247064-1-1.html?_dsign=be26943f
+
+google  破解WiFi密码基础姿势合集
+
+2019.1.9
+
+用过  tirom 的 9.8G 自己  好像邻居的 wifi密码就跑出来一个  其他没跑出来    万能钥匙比较好用  改天 换换其他字典
+
+
+有机会试一下  python编程  以前都是 用的 kali
+
+
+有空下载下  这个字典  http://www.kali.org.cn/thread-1201-1-1.html
+
+http://www.routerpwn.com/TP-LINK/
+https://www.secpulse.com/archives/5455.html
+
+
+自己的wifi 密码11111112
+
+2019.1.11
+kali 下面 拿到了  xiaomi h3c 的握手包 
+有时间再跑吧
+
+1.12
+F103  android5.0.2  用kingroot  
