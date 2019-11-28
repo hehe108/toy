@@ -1,0 +1,21 @@
+
+
+cd /home/wooyaa/source/osmocom-bb/src/host/osmocon/
+
+sudo  ./osmocon -m c123 -p /dev/ttyUSB0 ../../target/firmware/board/compal_e88/layer1.compalram.bin
+
+
+
+
+
+
+cd /home/wooyaa/source/osmocom-bb/src/host/layer23/src/misc/
+sudo ./cell_log –O
+
+
+
+
+cd /home/wooyaa/source/osmocom-bb/src/host/layer23/src/misc/
+ sudo ./ccch_scan -i 127.0.0.1 -a 32
+
+sudo wireshark -k -i lo -f 'port 4729'

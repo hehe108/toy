@@ -1,0 +1,40 @@
+改天看 dnsmasq  配置吧 。
+/usr/local/etc/
+
+
+server=127.0.0.1#8888
+address=/double-click.net/127.0.0.1
+
+代码不能运行   dns over http nodejs 代码不能运行
+
+
+https://github.com/CodeFalling/dns-proxy-https
+npm install
+
+sudo node /Users/hello/Desktop/dns/dns-proxy-https-master/build/src/index.js 
+
+
+ dig www.baidu.com @8.8.8.8
+
+
+
+代码加时间 
+ winston.info(`Request ${req.question[0].name}       `+Date().toString());
+
+
+有时间再改吧    sptidcsin.baidu.com   ww.badu.com 抛异常
+
+      switch (a.type) {
+        case 1:case 28:
+          // A & AAAA
+          record.address = a.data;
+          break;
+        case 5:
+          // CNAME
+          record.data = a.data;
+          break;
+        case 15:
+
+		
+
+https://1.1.1.1/dns-query?ct=application/dns-json&name=ipv6.google.com&type=A

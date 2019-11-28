@@ -1,0 +1,84 @@
+This device is locked to  a specific  mobile  operator. Contact your  mobile operator for  the  unlock code. 10 attempts  remaining.
+
+
+updates  80072f8f
+
+
+Nokia  lumia 530
+Carrier T-Moblie
+
+8.10.12400.899
+https://www.lumiafirmware.com/info
+
+https://forum.xda-developers.com/
+
+RM-1018
+code 059W1B2021508
+
+固件版本号  01068.00023.14391.54104
+不知道 sim 的解锁码 。。。
+
+https://support.t-mobile.com/docs/DOC-1588
+
+固件下载完  不知道怎么解包  ffu
+
+
+ImgMount  需要安装 vc2012 运行库 86 64 都装   win7  win8
+
+binwalk   https://www.freebuf.com/sectool/15266.html
+
+http://bbs.wfun.com/thread-976888-1-1.html
+
+
+先安装个   Windows Device Recovery Tool把
+
+lumia530  下载目录
+C:\ProgramData\Microsoft\Packages\Products\RM-1018\RM1018_01068.00023.14391.54104_RETAIL_prod_signed_1006_00F5E8_TMO-US.ffu
+
+
+MD5比较 
+certutil -hashfile D:\1.jpg md5
+
+
+http://bbs.wfun.com/thread-581749-1-1.html
+
+算了  有空先查 解 simlock 的所有资料吧
+
+
+晚上回去看看 thor2  参数行 跟 刷机文件作用 
+
+刷原厂固件后  10次解锁取消 
+
+
+thor2 -mode uefiflash -ffufile "C:\1111.ffu" -do_full_nvi_update -do_factory_reset
+
+
+FFU_PARSING_ERROR
+
+
+lumia530  不放手机卡  不能打911  放了过期的手机卡   能 打911 
+
+thor2 -mode ffureader -ffufile D:\123.ffu -dump_partitions -filedir  解包 。。。
+
+
+硬解 不懂啊   好多好多年前  以前  哪网站 来  lumia 拆开     
+
+https://www.cnbeta.com/articles/tech/284655.htm
+
+以前邮箱好多东西删掉了 。。。
+
+这个估计没戏  丢这里面吧  
+
+
+
+2019.6.12
+
+https://www.youtube.com/watch?v=ek5G5bsDzcc
+
+
+输入8位数  如果显示 PIN Accepted
+
+
+356462061829182
+
+如果暴力 破解 8位  10秒钟一个   31.7年

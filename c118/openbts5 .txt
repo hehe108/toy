@@ -1,0 +1,257 @@
+http://video.tudou.com/v/XMTczNTc4ODgwOA==.html?from=s1.8-1-1.2
+
+配置环境 
+
+hi  .  im  supersupersuper......ben
+
+oh  .today  install  osmosm  and  openbts5.0  lol
+
+system  use  ubuntu14  please  follow  my  steps  
+its  go
+
+用的是  ubutu  14.04.4   amd64
+
+wait  install ubuntu
+
+
+
+now  install   osmosm
+
+
+
+sudo  apt-get upgrade
+sudo  apt-get  install  libusb-dev libpcsclite-dev
+sudo  apt-get  install libusb-0.1.4 libpcsclitel libccid
+pcscd
+sudo  apt-get  install   libtool  shtool  autoconf  git-core
+pkg-config make  gcc build-essential  libgmp3-dev
+libmfr-dev libx11-6 libx11-dev  texinfo  flex  bison
+libncurses5 libncureses5-dbg  libncurses5-dev
+libcursesw5 libncursesw5-dbg  libncursesw5-dev zlibc
+zlibig-dev  libmpfr4 libmpc-dev libpcsclite-dev
+sudo  apt-get  install  libfftw3-dev libfftw3-doc
+
+
+
+https://www.samba.org/ftp/talloc
+mkdir bb
+tar -zxvf talloc-2.1.7.tar.gz
+cd talloc-2.1.7/
+./configure
+make
+sudo make  install
+cd bb
+mkdir build install src
+
+wget http://bb.osmocom.org/trac/raw-attachment/wiki/CmuArmToolchain/gnu-arm-build.3.sh
+cd src
+wget http://ftp.gmu.org/gnu/gcc/gcc-4.8.2/gcc-4.8.2.tar.bz2
+wget http://ftp.gmu.org/gnu/binutils/binwutils-2.21.1a.tar.bz2
+wget ftp://sources.redhat.com/pub/newlib/newlib-1.19.0.tar.gz
+chmod +x gnu-arm-build.3.sh
+./gmu-arm-build.3.sh
+enter
+vi ./.bashrc
+export  PATH=$PATH:/home/superben/arm/install/bin
+mkdir bb
+cd bb
+git clone git://git.osmocom.org/libosmocore.git
+git clone git://git.osmocom.org/osmocom.bb.git
+git clone git://git.osmocom.org/libosmo-dsp.git
+(openbts)
+cd libosmocore/
+autoreconf -i
+./configure
+
+
+(No  package  'talloc' found ) https://www.samba.org/ftp/talloc/
+make
+sudo make install
+sudo  ldconfig -i
+cd..
+-------------------------------------
+
+cd libosmo-dsp/
+autoreconf -i
+./configure
+make
+sudo make install
+sudo   ldconfig 
+-----------------------------------------
+
+cd ..
+cd  osmocom-bb/
+
+src/target/firmware/board/compal/highram.lds
+src/target/firmware/board/compal/ram.lds
+src/target/firmware/board/compal_e88/flash.lds
+src/target/firmware/board/compal_e88/loader.lds
+src/target/firmware/board/mediatek/ram.lds
+
+
+KEEP(*(SORT(.ctors))
+KEEP(*(SORT(.init_array))
+
+
+shoufaqi:
+git checkout sylvain/testing
+
+-if  u have  instal .donned
+osmocom-bb/src/target/firmwire/Makefile
+make -e  CROSS_TOOL_PREFIX=arm-none-eabi--
+
+osmocom-bb/src/target/firmwire/Makefile
+#CFLAGS +=-DCONFIG_TX_ENABLE
+cd src  
+make  HOST_layer23_CONFARGS==-console-transceiver
+sudo ./osmocom -p /dev.ttyUSB0 -m c123xor
+
+../../target/firmware/board/compal_e88/trx.compalram.bin
+
+
+xlutan:
+git checkout --track origin/luca/gsmmap
+
+cd src
+make
+
+
+
+sudo ./osmocom -m c123xor -p /dev/ttyUSB0
+
+../../target/firmware/board/compal_e88/layer1.compalram.bin
+
+
+
+./ccch_scan -t 127.0.0.1 -a ARFCN
+
+
+sudo apt-get install  wireshark
+sudo wireshark -k -i lo -f 'port 4729'
+
+
+src/target/firmware/board/compal/highram.lds
+src/target/firmware/board/compal/ram.lds
+src/target/firmware/board/complal_e88/flash.lds
+src/target/firmware/board/compal_e88/loader.lds
+src/target/firmware/board/mediatek/ram.lds
+
+
+
+KEEP(*SORT(.ctors))
+KEEEP(*SORT(.ini_array))
+
+
+cd /opt/osmocom-BB/src
+
+make -e  CROSS_TOOL_PREFIX=arm-none-eabi-
+
+sudo apt-get install  libfftw3-dev libfftw3-doc
+
+bts:
+su
+
+svn co  http://wush.net/svn/range/software/public
+
+sudo apt-get install  autoconf  libtool libosip2-dev
+libortp-dev libusb-1.0.0-dev g++  sqlite3 libsqlite3-dev
+
+erlang libreadline6-dev libocurses5-dev
+
+cd a53/trunk
+make install
+
+cd openbts/trunk
+
+autoreconf -i
+
+./configure
+make
+cd apps
+
+ln -s ../TransceiverRAD1/transeiver 
+
+sudo  mkdir /etc/OpenBTS
+
+sudo  sqlite3 -init ./apps/OpenBTS.example.sql
+
+/etc/OpenBTS/OpenBTS.db ".quit"
+
+
+sqlite3  /etc/OpenBTS/OpenBTS.db .dump
+
+sudo mkdir -p /var/lib/asterisk/sqite3dir
+
+
+
+
+openbts/trunk/apps/OpenBTS
+openbts/trunk/apps/OpenBTSCLI
+
+
+
+sudo apt-get install ntp
+
+sudo apt-get install bind9
+sudo apt-get install libboost-dev
+
+sudo apt-get install software-properties-common
+python-software-properties
+sudo add-apt-repository ppa:git-core/ppa
+(press enter to continue)
+sudo apt-get update
+sudo apt-get install git
+git --version
+git clone https://github.com/RangeNetworks/dev.git
+
+ssh-keygen -t rsa  -b  4096 -C "your_email@example.com"
+
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/td-rsa
+
+vi ~/.ssh/id-rsa.pub
+
+cd dev
+
+./clone.sh
+./switchto.sh master
+gedit build.sh
+
+。。。。。。。。。。。。。。。
+
+
+sudo dpkg -i BUILD -timestamp/*.deb
+sudo start asterisk
+sudo start stpauthserve
+sudo start smqueue
+sudo start openbts
+
+sudo ./osmocon -p /dev/ttyUSB0  -m  c123xor
+
+
+
+config GSM.Raido.NeedBSIC 1
+config GSM.RACH.MaxRetrans 3
+config GSM.RACH.TxInteger 8
+config GSM.Radio.C0 ARFCN
+config Control.LUR.OpenRegistration .*
+
+
+config GSM.Identity.MCC 001
+config GSM.Identity.MNC 01
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

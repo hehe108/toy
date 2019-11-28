@@ -1,0 +1,7 @@
+chrome://dino/
+
+
+运行方法 控制台输入   new Runner('.interstitial-wrapper');
+
+
+Chrome 自带的 Inspect Element 中的 Audits 就可以查询页面当中的无用 css

@@ -1,0 +1,19 @@
+opencv
+yolo
+tensorflow 
+物体识别
+
+改天找找日本那个网址
+
+https://www.learnopencv.com/deep-learning-based-object-detection-using-yolov3-with-opencv-python-c/
+https://github.com/spmallick/learnopencv/blob/master/README.md?ck_subscriber_id=272159028
+
+darknet  https://pjreddie.com
+
+
+python yolo.py   -y /Users/hello/Desktop/pyimagesearch/yolo-object-detection/yolo-coco  -i /Users/hello/Desktop/image/IMG_0839.JPG 
+
+
+有时间看看哪个效果好 。貌似时间越新  效果越好
+
+

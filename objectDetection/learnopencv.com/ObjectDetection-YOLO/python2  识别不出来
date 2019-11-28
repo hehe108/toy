@@ -1,0 +1,5 @@
+python2  识别不出来 
+python3 ok
+
+
+ python3 object_detection_yolo.py   --image /Users/hello/Desktop/我的照片/未命名文件夹/陈思思\ \(2\)\ 2.jpg 

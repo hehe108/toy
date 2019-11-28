@@ -1,0 +1,206 @@
+下载的文件如果  Permission denied   用 chmod +x *  加执行权限
+
+
+https://www.docin.com/p-805177109.html 有空看看 哈 
+https://www.cnblogs.com/k1two2/p/6239188.html
+发送 中文短信 
+
+收短信
+
+技术分析：Femtocell家庭基站通信截获、伪造任意短信
+https://www.cnblogs.com/bccn/p/4901059.html 3g
+
+
+https://www.freebuf.com/sectool/107755.html
+下载  ubuntu12.04-i386   更新慢。
+
+错误1.
+ No package 'gnutls' found   ubnunt
+sudo apt-get install libgnutls28-dev 
+/home/hello/桌面/osmocombb/osmocom-bb/src/target/firmware/include/asm/swab.h:32: Error: no such instruction: `eor %edx,%edi,%edi,ror'
+make[4]: *** [gsmtap_util.lo] 错误 1
+
+改天 重新 安装把 
+
+
+错误2.make[1]:***[configure-binutils] Error1 
+
+删除 binutils-2.21.1 把 src 里面的复制进去
+
+
+错误3
+Error:no such instruction :eor  edx  edi  edi ror
+环境变量 少个 ~
+
+错误4   
+compal_e88/hello_world.compalram.elf  
+git  clean -dfx
+make  
+
+
+2019.1.15
+环境配好了 。扫不到基站 ？？？  改天再说。。。
+2019.1.16
+还是扫不到基站  并且  cell_log  没反应
+
+
+https://new.qq.com/omn/20181025/20181025A0P52400
+
+
+http://www.anquan.us/static/drops/tips-11955.html
+
+
+wget http://ftp.gnu.org/gnu/gcc/gcc-4.5.2/gcc-4.5.2.tar.bz2
+wget http://ftp.gnu.org/gnu/binutils/binutils-2.21.1a.tar.bz2
+wget ftp://sources.redhat.com/pub/newlib/newlib-1.19.0.tar.gz
+
+
+
+error: pathspec '"\342\200\223track"' did not match any file(s) known to git.
+error: pathspec 'origin/luca/gsmmap' did not match any file(s) known to git.
+
+换   git checkout origin/luca/gsmmap 吧
+
+
+
+https://blog.csdn.net/lissdy/article/details/50291995
+
+
+
+　　IMSI：国际移动用户识别码，是识别移动用户的标志，IMSI是全网和全球唯一的（当然，非法制造商也可能造出IMSI相同的SIM卡），一般在入网和TMSI更新失败时使用。
+　　TMSI：临时移动用户识别码，它是IMSI的临时“代表”，出于IMSI的安全考虑，为尽量避免在空中接口传递IMSI，由VLR给用户分配的，TMSI在当前VLR中是唯一的。
+
+
+系统 用的   ubuntu-12.04.5-desktop-i386.iso  
+
+2.12
+改天 保存下  bin 文件跟    试一下  openbts
+
+https://www.92ez.com/?action=show&id=23384
+
+
+2.19
+
+改天找本 c++  课本看看   C++面向对象程序设计题解与上机指导
+
+今天  用openbts  tmsis 命令查询不到 任何内容 改天再试试
+
+有可能是  <ARFCN>替换成附近信号最强的ARFCN号  的问题 ？？？？ 改天再说 
+或者是 没换零件的问题？？？  或者 找个 2g手机 
+
+为何只有改过滤波器的机器才能嗅探到上行的短信？  其他手机爱发什么发什么，管我屁事。上行频率跟下行频率是不同的。
+
+
+3.15
+
+https://www.sohu.com/a/245668391_609556
+改天看看哪个手机能 查arfcn 
+
+
+3.23
+小米手机查询    arfcn
+　*#*#4636#*#*
+
+Received DOWNLOAD NACK from phone, something went wrong
+
+这个错误 怎么解决 明天再说把  
+
+有可能是分支不对  切换一下 重新编译 
+
+改天看看 这个吧 https://www.freebuf.com/articles/wireless/195630.html
+
+
+
+3.27
+
+
+
+小米手机的  arfcn   是  　*#*#4636#*#*  里面第一个
+
+试试  openbts
+
+回北寨 睡觉去  openbts 弄不来 。。。。 再查查资料 
+
+
+http://video.tudou.com/v/XMTczNTc4ODgwOA==.html?from=s1.8-1-1.2
+3.28
+ superben openbts5.0  上面的土豆视频 
+
+
+自己操作 
+不行啊 
+https://www.cnblogs.com/k1two2/p/6239188.html
+跟博客里面的不一样  
+
+
+$ ./sipauthserve(开启注册服务)   博客图片里面的回显信息比自己 ubuntu 操作的多   没什么影响 
+
+
+3.31
+
+算了 先用  土豆视频里面的  步骤吧
+
+用这个 吧 
+
+https://bbs.pediy.com/thread-212485.htm
+
+4.2
+
+刚刚 用 https://bbs.pediy.com/thread-212485.htm    tmsis   arfcn 用的 21  查询到一条  信息 没敢发  老妈回来了 。。。
+
+
+
+
+再测试的时候 又失败   
+
+算了改天再试吧 
+
+
+4.4
+opentbts测试又失败  睡觉 下午  起床 新建文件夹  重新开始
+
+
+tmsis 还是查不出来啊   睡觉睡觉 。。。。。。
+
+
+4.8
+
+今天测试openbts 又失败   
+
+前几天 忘记 输入  sudo  ./transceiver ARFCN  命令了 
+
+
+4.10
+
+arfcn 21  又失败 一会试试 26  30  32
+
+还是失败  改天测试下 从0开始吧 
+4.12
+pediy 跟 cnblogs 都失败  我去 是不是 现在失效了 啊  
+
+暂停吧 有空再说  4.2号 的是  tmsis 怎么能查询的 啊 
+
+4.14
+pediy 还是不行啊  ~~~~~~~~~~~~~~~~~~~~
+
+
+
+4.16
+还是不行啊  改天 换个网站试试 重新 找个 
+
+
+4.29
+
+报Assertion  ARFCN>=975 &&  ARFCN<=1023  failed 错误 
+
+不行 看 youtube 吧 
+
+5.5  
+还是不行  
+https://www.youtube.com/watch?v=r_U7DKFYuqo&feature=youtu.be
+
+
+
+6.12
+
+还是失败    改天对着 视频 blog 一句一句的对 

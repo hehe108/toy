@@ -1,0 +1,22 @@
+https://github.com/SarvagyaVaish/FlappyBirdRL
+
+https://www.jianshu.com/p/0a04426ee3ad
+
+
+python2   python -m SimpleHTTPServer 8000
+python3   python -m http.server 8000
+
+
+https://www.bilibili.com/video/av13485901/
+
+https://www.bilibili.com/video/av35314487
+
+https://github.com/mrspeaker/wafty-man
+
+
+https://cloud.tencent.com/developer/article/1377187
+
+
+https://www.cnblogs.com/qcloud1001/p/9680042.html
+
+https://www.nature.com

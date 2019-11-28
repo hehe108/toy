@@ -1,0 +1,150 @@
+ OpenCV 3.4.2 
+
+python2 不行用 python3 
+
+感觉 opencv  配合 ps 看比较好
+
+关键看看下面的 算法 有 毛线的用处啊  
+
+
+
+/python/_coverage.py
+/python/_doc.py
+/python/asift.py       貌似类似于  不同角度的两个图 连连看 
+/python/browse.py      高分辨率图片导航
+/python/calibrate.py       摄像头标定   校准
+/python/camera_calibration_show_extrinsics.py      matplotlib打点   
+/python/camshift.py           基于   mean-shift 的 摄像头追踪 
+/python/coherence.py          相干增强扩散模型 滤镜  不懂 。。。
+/python/color_histogram.py      视频直方图  
+/python/common.py        
+/python/contours.py          画出图形边缘 
+/python/deconvolution.py     反卷积  貌似把模糊的图片 变清晰
+/python/demo.py               所有的demo
+/python/dft.py                离散傅立叶变换   貌似就是 把 图像变灰 不懂 
+/python/digits.py             SVM  KNearest 识别数字
+/python/digits_adjust.py      识别数字 
+/python/digits_video.py       识别图像中的数字 
+/python/distrans.py           距离变换   不懂
+/python/edge.py               摄像头轮廓 
+/python/facedetect.py         把头圈出来 
+/python/feature_homography.py     类似于连连看  空格键暂停  http://www.youtube.com/watch?v=FirtmYcC0Vc
+/python/find_obj.py            两张图片连连看 
+/python/fitline.py           直线拟合  貌似是 机器学习啊
+/python/floodfill.py         油漆桶 或者 ps 魔棒
+/python/gabor_threads.py      变颜色 
+/python/gaussian_mix.py      高斯混合模型     不懂有时间再看    貌似是聚类 的 东西 
+/python/grabcut.py           可用于 前景 背景  分割 
+/python/hist.py              直方图 
+/python/houghcircles.py      探测圆形 
+/python/houghlines.py        直线探测  
+/python/inpaint.py           这个牛  去水印  
+/python/kalman.py            跟个贪吃蛇一样 不知道是做什么的 
+/python/kmeans.py            聚类  分类算法 
+/python/lappyr.py           图像拉普拉斯金字塔融合  An example of Laplacian Pyramid construction and merging.  貌似就是一个图像处理
+/python/letter_recog.py      字母识别  SVM MLP  Boost   KNearest  RTrees
+/python/lk_homography.py     摄像头  不懂 
+/python/lk_track.py          摄像头移动的 跟移动检测貌似有关  optical flow
+/python/logpolar.py          图片变形 
+/python/morphology.py         形态学操作
+/python/mosse.py             视频 没看出什么东西来
+/python/mouse_and_match.py   好像是匹配的例子
+/python/mser.py              最大极值稳定区域  不知道干鸟屎的 
+/python/opencv_version.py    输出 opencv 版本
+/python/opt_flow.py          摄像头乱七八糟线条
+/python/peopledetect.py      HOGDescriptor svm 行人探测
+/python/plane_ar.py         类似于下面的 
+/python/plane_tracker.py    先圈出一个正方形 然后 追踪  http://www.youtube.com/watch?v=pzVbhxx6aog
+/python/squares.py           正方形探测
+/python/stereo_match.py         立体图片   灰颜色图片生成 不懂 
+/python/texture_flow.py        把图片线条化 
+/python/tst_scene_render.py    一张图在另一张图上飘  
+/python/turing.py                 貌似是生成 视频的  没鸟用  不知道 
+/python/video.py                  视频 
+/python/video_threaded.py   表面 视频模糊处理
+/python/video_v4l2.py        好像是  Video4Linux2  视频 
+/python/watershed.py        表面现象就是变颜色
+
+
+直方图相关
+
+/python/tutorial_code/Histograms_Matching/back_projection/calcBackProject_Demo1.py
+/python/tutorial_code/Histograms_Matching/back_projection/calcBackProject_Demo2.py
+/python/tutorial_code/Histograms_Matching/histogram_calculation/calcHist_Demo.py
+/python/tutorial_code/Histograms_Matching/histogram_comparison/compareHist_Demo.py
+/python/tutorial_code/Histograms_Matching/histogram_equalization/EqualizeHist_Demo.py
+
+
+
+
+/python/tutorial_code/ImgTrans/Filter2D/filter2D.py                   一个模糊滤镜
+/python/tutorial_code/ImgTrans/HoughCircle/hough_circle.py             探测圆形
+/python/tutorial_code/ImgTrans/HoughLine/hough_lines.py                探测直线
+/python/tutorial_code/ImgTrans/LaPlace/laplace_demo.py                 表面就是把图片弄灰
+/python/tutorial_code/ImgTrans/MakeBorder/copy_make_border.py          图片加边框
+/python/tutorial_code/ImgTrans/SobelDemo/sobel_demo.py                  表面貌似就是变灰
+/python/tutorial_code/ImgTrans/canny_detector/CannyDetector_Demo.py     边缘检测 
+/python/tutorial_code/ImgTrans/distance_transformation/imageSegmentation.py    貌似是好几种  图像变换 
+/python/tutorial_code/ImgTrans/remap/Remap_Demo.py                       缩放旋转
+/python/tutorial_code/ImgTrans/warp_affine/Geometric_Transforms_Demo.py    扭曲变形
+
+
+
+/python/tutorial_code/ShapeDescriptors/bounding_rects_circles/generalContours_demo1.py    边缘
+/python/tutorial_code/ShapeDescriptors/bounding_rotated_ellipses/generalContours_demo2.py   边缘
+/python/tutorial_code/ShapeDescriptors/find_contours/findContours_demo.py                          边缘
+/python/tutorial_code/ShapeDescriptors/hull/hull_demo.py                                    边缘
+/python/tutorial_code/ShapeDescriptors/moments/moments_demo.py                 边缘
+/python/tutorial_code/ShapeDescriptors/point_polygon_test/pointPolygonTest_demo.py       报错
+
+
+
+边角检测 
+/python/tutorial_code/TrackingMotion/corner_subpixels/cornerSubPix_Demo.py
+/python/tutorial_code/TrackingMotion/generic_corner_detector/cornerDetector_Demo.py
+/python/tutorial_code/TrackingMotion/good_features_to_track/goodFeaturesToTrack_Demo.py
+/python/tutorial_code/TrackingMotion/harris_detector/cornerHarris_Demo.py
+
+
+/python/tutorial_code/core/AddingImages/adding_images.py                                    合成图片
+/python/tutorial_code/core/discrete_fourier_transform/discrete_fourier_transform.py      普利叶变换  不懂
+/python/tutorial_code/core/mat_mask_operations/mat_mask_operations.py                    区别很小 就是图片变粗糙
+/python/tutorial_code/core/mat_operations/mat_operations.py                     报错
+
+
+/python/tutorial_code/features2D/akaze_matching/AKAZE_match.py           连连看
+/python/tutorial_code/features2D/feature_description/SURF_matching_Demo.py    报错 
+/python/tutorial_code/features2D/feature_detection/SURF_detection_Demo.py    报错 
+/python/tutorial_code/features2D/feature_flann_matcher/SURF_FLANN_matching_Demo.py  报错
+/python/tutorial_code/features2D/feature_homography/SURF_FLANN_matching_homography_Demo.py  报错 
+
+
+/python/tutorial_code/highgui/trackbar/AddingImagesTrackbar.py       图片合成
+
+/python/tutorial_code/imgProc/BasicGeometricDrawing/basic_geometric_drawing.py   花几何图形
+/python/tutorial_code/imgProc/HitMiss/hit_miss.py    一个算法
+/python/tutorial_code/imgProc/Pyramids/pyramids.py     放大缩小
+/python/tutorial_code/imgProc/Smoothing/smoothing.py   各种模糊 
+/python/tutorial_code/imgProc/changing_contrast_brightness_image/BasicLinearTransforms.py    变颜色 python3
+/python/tutorial_code/imgProc/changing_contrast_brightness_image/changing_contrast_brightness_image.py    变颜色 python3 
+/python/tutorial_code/imgProc/erosion_dilatation/morphology_1.py            腐蚀膨胀  
+/python/tutorial_code/imgProc/hough_line_transform/hough_line_transform.py            画出直线
+/python/tutorial_code/imgProc/hough_line_transform/probabilistic_hough_line_transform.py    画出直线
+/python/tutorial_code/imgProc/match_template/match_template.py            模版匹配 不准啊  
+/python/tutorial_code/imgProc/morph_lines_detection/morph_lines_detection.py   灰度 等计算 
+/python/tutorial_code/imgProc/opening_closing_hats/morphology_2.py   一些 操作 腐蚀 膨胀  等 。。。。以后再看吧 
+/python/tutorial_code/imgProc/threshold/threshold.py                  二值
+/python/tutorial_code/imgProc/threshold_inRange/threshold_inRange.py  摄像头二值
+
+
+
+/python/tutorial_code/introduction/documentation/documentation.py               汗 就是输出两段话
+
+/python/tutorial_code/ml/introduction_to_pca/introduction_to_pca.py              !!!!!!报错 没有 PCACompute2
+/python/tutorial_code/ml/introduction_to_svm/introduction_to_svm.py           svm分类器
+/python/tutorial_code/ml/non_linear_svms/non_linear_svms.py                    是不是类似于 非线性回归。罗辑回归
+/python/tutorial_code/ml/py_svm_opencv/hogsvm.py                              识别数字图片的   改天看看跟 HOGDescriptor 区别
+
+/python/tutorial_code/objectDetection/cascade_classifier/objectDetection.py  摄像头 把脸圈出来
+
+/python/tutorial_code/photo/hdr_imaging/hdr_imaging.py      把图片合并成 hdr 图片 貌似是 清晰度高效果好 有时间看看曝光时间的影响

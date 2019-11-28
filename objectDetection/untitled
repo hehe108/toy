@@ -1,0 +1,73 @@
+
+darknet
+AlexNet    2012  ImageNet 冠军  2012年  ILSVRC   冠军     自2010年以来,每年度ImageNet大规模视觉识别挑战赛(ILSVRC)
+VGGNet     牛津  
+googLeNet     googlenet和vgg是2014年imagenet竞赛的双雄
+
+
+coco数据集
+yolo
+
+CIFAR-10 
+ResNet在2015年被提出,在ImageNet比赛classification任务上获得第一名
+
+
+
+https://yq.aliyun.com/articles/576274
+数据集大全：25个深度学习的开放数据集
+
+
+https://www.pyimagesearch.com/
+
+https://www.learnopencv.com/deep-learning-based-object-detection-using-yolov3-with-opencv-python-c/
+https://github.com/spmallick/learnopencv/blob/master/README.md?ck_subscriber_id=272159028
+有空仔细读读这个  貌似 不错  
+
+yolov3.weights
+
+
+tensorflow 所有模型下载 
+https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
+
+
+
+mAP (mean Average Precision,平均精确率均值) 
+
+
+protoc object_detection/protos/*.proto --python_out=.
+
+
+
+https://gitee.com/GukehAn/Custom-Object-Detection   视频 
+
+https://gitee.com/stemcell/EdjeElectronics 扑克牌
+
+
+
+
+11.2
+明天看看   checkpoint     ckpt   ckpt.index   ckpt.meta   pipeline.config   saved_model.pb  的作用
+
+
+
+2019.1.8
+
+改天找找 日本那家伙写的  
+还有 gitee 上面 object Detection
+
+
+
+
+1.10
+
+https://pjreddie.com
+
+
+
+1.11
+https://pjreddie.com  网站 介绍了  darknet 的所有应用  睡觉 明天再说 
+
+1.12
+https://www.pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/
+
+https://nixeneko.hatenablog.com/entry/2018/08/15/000000
