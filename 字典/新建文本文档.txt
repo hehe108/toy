@@ -39,3 +39,5 @@ kali 下面 拿到了  xiaomi h3c 的握手包
 
 1.12
 F103  android5.0.2  用kingroot  
+
+2019.11.30  用那个 老手机蹭网吧
