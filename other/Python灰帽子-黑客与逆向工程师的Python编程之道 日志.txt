@@ -1,0 +1,83 @@
+﻿第1章 搭建开发环境 
+
+from ctypes import *
+mavcrt=cdll.msvcrt
+message_string="hello world\n"
+
+mavcrt.printf("tessting %s",message_string
+
+
+
+
+
+
+
+x86函数调用方式 cdecl  参数 从后面向前 push
+还有种stdcall  这种跟上面一样 但是不会 add esp,12
+
+
+C数据类型
+from ctypes import *
+
+c_int()
+c_char_p("hello world!")
+c_ushort(-5)
+
+seitz=c_char_p("loves the  python")
+print seitz
+print seitz.value
+exit()
+
+
+
+联合体所占的内存长度等于其最长成员的长度，也有叫做共用体
+
+# -*- coding: UTF-8 -*-
+from ctypes import *
+class barley_amount(Union): 
+	_fields_ = [                      '这个地方必须这样缩进 不然 报错'
+	("barley_long",c_long),
+	("barley_int",c_int),
+	("barley_char",c_char*8),
+	]
+value=raw_input("Enter the amount of barley to put into the beer vat:")
+my_barley=barley_amount(int(value))
+
+print "Barley amount as a  long: %ld" % my_barley.barley_long
+print "Barley amount as a  int: %d" % my_barley.barley_int
+print "Barley amount as a  char: %s" % my_barley.barley_char  '原文这个地方有错误 '
+
+就是 这个 内存 存储不同类型数据 
+
+
+
+第2章 调试器原理与设计   
+EAX  EDX ECX ESP EBP 等寄存器作用 
+硬件断点 看的 比较 模糊 
+
+实现调试事件处理例程  改天再看 
+
+第3章 
+
+第4章 PyDbg -windows下的纯python 调试器
+
+明天再看吧  有点难读懂
+
+
+第5章  Immunity  Debugger- 两极世界的最佳选择
+
+第6章  钩子 的艺术 
+第7章  DLL注入与代码注入技巧
+py2exe
+
+第8章  Fuzzing
+
+第9章  Sulley
+
+第10章  面向Windows 驱动的Fuzzing测试技术
+
+第11章  IDAPython-IDAPRO 环境下的python脚本教程
+
+第12章  PYEmu-脚本驱动式仿真器
+
+不看了 驱动  脱壳 调试器没用好 看着头晕
