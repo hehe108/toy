@@ -1,0 +1,86 @@
+WindowsAPI QueryPerformanceFrequency/QueryPerformanceCounter高精度计时器来解决，这个已CPU频率为基准的计时器的精确度足以满足我们的需要。简单来说QueryPerformanceFrequency返回你的硬件每秒钟震荡频率是多少次，在我的机器是2208064，函数QueryPerformanceCounter返回自开机以来你的硬件晶体已经震荡了多少
+
+
+
+unit ThreadServo;
+ 
+interface
+ 
+uses SysUtils, Windows, Classes, SyncObjs, WinIo;
+ 
+const
+  MAX_CHANNELS=8;
+ 
+type
+  EServoThread = class(Exception);
+ 
+  TServoThread = class(TThread)
+  private
+    FBase:Int64;
+    FCurrent:Int64;
+    FInterval:Int64;
+    FFrequency:Int64;
+    FMaxPulse:Int64;
+    FMinPulse:Int64;
+    FLastSignal:Byte;
+    FSleeped:Boolean;
+    FAllowSleep:Boolean;
+    FLock:TCriticalSection;
+    FChannels:array [1..MAX_CHANNELS] of Integer;
+    FChannelsTime:array [1..MAX_CHANNELS] of Int64;
+    procedure SetChannel(Index: Integer; const Value: Integer);
+    procedure SetSignal(CH1,CH2,CH3,CH4,CH5,CH6,CH7,CH8:Boolean);
+    procedure SetInterval(const Value: Integer);
+    procedure SetMaxPulse(const Value: Integer);
+    procedure SetMinPulse(const Value: Integer);
+  public
+    constructor Create;
+    destructor Destroy; override;
+    procedure Execute; override;
+    property Channels[Index:Integer]:Integer write SetChannel;
+    property Interval:Integer write SetInterval;
+    property MaxPulse:Integer write SetMaxPulse;
+    property MinPulse:Integer write SetMinPulse;
+    property AllowSleep:Boolean write FAllowSleep;
+  end;
+ 
+implementation
+ 
+{ TServoThread }
+ 
+constructor TServoThread.Create;
+begin
+  if not InitializeWinIo then 
+    raise EServoThread.Create('Initialize error.');
+  FLock:=TCriticalSection.Create;
+  QueryPerformanceFrequency(FFrequency);  //每秒震动次数 
+  SetInterval(20000);  
+  SetMaxPulse(2500);  
+  SetMinPulse(500);  
+  FAllowSleep:=True;  
+  inherited Create(False);
+end;
+ 
+destructor TServoThread.Destroy;
+begin
+  Terminate;
+  ShutdownWinIo;
+  FLock.Free;
+  inherited;
+end;
+ 
+procedure TServoThread.Execute;
+begin
+  Priority:=tpTimeCritical;  
+  QueryPerformanceCounter(FBase);         //////////////////取当前开启后的震动次数 
+  while not Terminated do begin
+    QueryPerformanceCounter(FCurrent);    //////////////////取当前开启后的震动次数 
+    if FCurrent-FBase>FInterval then begin  ////////两次次数之差   FInterval:=Round(FFrequency*(Value/1000/1000)); FFrequency每秒震动次数   /1000/1000是从 微妙转毫秒 然后 转秒
+      FBase:=FCurrent;                    ////////////如果 2次震动 时间过了20000ms  置换 当前震动次数 跟 
+      FSleeped:=False;
+    end
+
+
+
+
+ 奇怪 为什么 FCurrent  大于 FBase 明白了 因为FBase 先取的 所以小  
