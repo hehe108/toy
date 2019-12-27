@@ -12,3 +12,4 @@ https://blog.csdn.net/xyx107/article/details/79151025
 
 失败 
 
+一次失败后  445口 就会关闭 虽然netstat能查出来
