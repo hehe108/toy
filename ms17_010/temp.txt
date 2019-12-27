@@ -16,3 +16,7 @@ win7 32位失败  老是 蓝屏
 cn_windows_7_ultimate_x86_dvd_x15-65907.iso
 换64位试试 
 cn_windows_7_ultimate_x64_dvd_x15-66043.iso
+
+
+https://blog.51cto.com/1inux/2091505
+https://blog.csdn.net/xiaopan233/article/details/82808386
