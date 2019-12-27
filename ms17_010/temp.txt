@@ -1,6 +1,6 @@
 
 msfconsole
-use  auxiliary/scanner/smb/smb_17_010
+use  auxiliary/scanner/smb/smb_ms17_010
 set RHOSTS 192.168.1.1/24    扫描网段
 run
 
