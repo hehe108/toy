@@ -7,7 +7,7 @@ show targets 显示有漏洞的操作系统
 Windows XP Professional with Service Pack 3 (x86) - CD (Chinese-Simplified) 2008-05-01   失败  
 换 成 Windows XP Professional with Service Pack 2 (Simplified Chinese) 这个 2004-08-26    失败
 
-换成 Windows XP Professional (Simplified Chinese)  2001-10-30
+换成 Windows XP Professional (Simplified Chinese)  2001-10-30                             失败
 
 
 https://blog.csdn.net/xyx107/article/details/79151025
