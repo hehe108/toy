@@ -1,4 +1,4 @@
-nmap 192.168.55.1-254   saomiaowangduan kaifanghuoqiang ping butong   win8 kaifanghuoqiang neng ping tong
+nmap 192.168.55.1-254   扫描网段 win7开防火墙 ping 不通   win8 开防火墙 能 ping 通
 
 
 
