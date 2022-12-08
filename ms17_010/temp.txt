@@ -1,4 +1,4 @@
-nmap 192.168.55.1-254   saomiaowangduan kaifanghuoqiang ping butong
+nmap 192.168.55.1-254   saomiaowangduan kaifanghuoqiang ping butong   win8 kaifanghuoqiang neng ping tong
 
 
 
