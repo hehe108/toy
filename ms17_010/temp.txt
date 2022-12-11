@@ -18,7 +18,9 @@ run 或者 exploit
 win7 32位失败  老是 蓝屏   
 cn_windows_7_ultimate_x86_dvd_x15-65907.iso    改天试试 修改上面的  payload试试改成x86的不用64位的
 换64位试试 
-cn_windows_7_ultimate_x64_dvd_x15-66043.iso    2009-08-23  成功得到shell 没 蓝屏
+cn_windows_7_ultimate_x64_dvd_x15-66043.iso   2009-08-23  成功得到shell 没 蓝屏
+
+cn_windows_7_professional_with_sp1_x64_dvd_u_677031.iso  2011-05-12
 
 
 https://blog.51cto.com/1inux/2091505
