@@ -33,4 +33,4 @@ meterpreter > clearev    清除日志
 有机会试试win7 64位  貌似要提权
 
 cn_windows_7_professional_with_sp1_vl_build_x64_dvd_u_677816.iso 2011-05-12  win7打开连接失败
-明天换2010年前的windows 试试
+明天换2010年前的windows7 32 位 跟64位 试试
