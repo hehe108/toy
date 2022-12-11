@@ -20,9 +20,10 @@ cn_windows_7_ultimate_x86_dvd_x15-65907.iso    改天试试 修改上面的  pay
 换64位试试 
 cn_windows_7_ultimate_x64_dvd_x15-66043.iso   2009-08-23  成功得到shell 没 蓝屏
 
-cn_windows_7_professional_with_sp1_x64_dvd_u_677031.iso  2011-05-12 zuixinban win7 zhuanyeban sp1chengong dedao shell
-shell hou ruguo zhongwen you luanma chcp 65001 keyijiejue
-download c:\\222.txt   xiazaiwenjian   buxu \\
+cn_windows_7_professional_with_sp1_x64_dvd_u_677031.iso  2011-05-12 最新版 win7 专业版 sp1   成功得到shell
+如果有乱码   在shell 中 运行 chcp 65001 可以解决
+
+下载文件 download c:\\222.txt   下载文件必须 \\
 
 
 
