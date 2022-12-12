@@ -34,7 +34,8 @@ https://www.cnblogs.com/wangyuyang1016/p/12099333.html
 
 明天试一个32位的win7
 cn_windows_7_professional_with_sp1_x86_dvd_u_677162.iso  2011-05-12    
-用set payload windows/x64/meterpreter/reverse_tcp  xianshi This module only supports x64 (64-bit) targets
+用set payload windows/x64/meterpreter/reverse_tcp  
 
 
 跟payload windows/meterpreter/reverse_tcp 都失败
+都显示 This module only supports x64 (64-bit) targets
