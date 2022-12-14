@@ -52,3 +52,5 @@ run
 win8 能运行生产的木马 关了 windows defender 就行  clearev 没权限
 管理员 权限 运行 openme.exe 可以 clearev 了
 晚上可以玩玩提权
+
+试试32位木马在64位电脑上运行看看   试试开防火墙看看
