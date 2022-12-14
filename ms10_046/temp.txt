@@ -62,6 +62,8 @@ set SESSION 1
 run
 chenggong dedao  session2 
 getsystem jiu  bu baocuole  yeneng qingrizhi  suiran haishi zhege yonghu  dan quanxian tigaole 
+zai win8.1 xitongzhong tiquan shibai pingqie tantishikuang 
+
 
 haishi zhege xitong  yong liyizhong fangfa tiquan 
 
