@@ -84,3 +84,4 @@ surface的win8.1 run vnc屏幕显示不全   win7 也显示不全
 试试32位木马在64位电脑上运行看看 服务器客户端  都用 32位 在 64位 电脑上都能运行  run vnc还说显示不全  试试win7开防火墙也能用木木连接  win8开防火墙运行木马后  也能连接  
 
 win7  win8  提权都失效 明天找原因
+shuixinghou  win7 ceshi tiquan chengongle 
