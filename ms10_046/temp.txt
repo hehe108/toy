@@ -67,6 +67,7 @@ getsystem 就不报错了  也能清日志
 还是这个2009-08-26 系统 用另一种方法提权 
 
 getsystem
+background
 use post/multi/recon/local_exploit_suggester
 set SESSION 1
 show options
