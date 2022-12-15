@@ -87,3 +87,5 @@ surface的win8.1 run vnc屏幕显示不全   win7 也显示不全
 win7  win8  提权都失效 明天找原因
 shuixinghou  win7 ceshi tiquan chengongle 
 win8  yong windows/local/bypassuac_sluihijack tiquanchengong 
+exploit/windows/local/ms16_032_secondary_logon_handle_privesc
+zheliange douneng chenggong
