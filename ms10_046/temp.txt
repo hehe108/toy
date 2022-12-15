@@ -89,3 +89,5 @@ win7  win8  提权都失效 明天找原因
 win8  用 windows/local/bypassuac_sluihijack 提权成功 
 exploit/windows/local/ms16_032_secondary_logon_handle_privesc
 这两个 都 成功 带防火墙也能提权成功
+
+键盘记录   keyscan_start      keyscan_dump  keysacn_stop
