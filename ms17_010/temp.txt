@@ -28,7 +28,7 @@ cn_windows_7_professional_with_sp1_x64_dvd_u_677031.iso  2011-05-12 最新版 wi
 
 
 
-https://blog.51cto.com/1inux/2091505        meterpreter > screenshot win8
+https://blog.51cto.com/1inux/2091505        meterpreter > screenshot win8测试能截全屏
 https://blog.csdn.net/xiaopan233/article/details/82808386
 https://www.cnblogs.com/wangyuyang1016/p/12099333.html
 
