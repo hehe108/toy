@@ -57,7 +57,9 @@ aircrack-ng -a2 -b 08:57:00:4C:BF:E0 -w 1.txt  ~/Desktop/*.cap
 
 
 
-
+获得握手包时会有这样的显示
+sudo airodump-ng wlan0   
+CH  8 ][ Elapsed: 4 mins ][ 2023-02-06 11:33 ][ WPA handshake: D4:EE:07:1D:85:D2  
 
 
 
