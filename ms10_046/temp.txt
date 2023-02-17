@@ -1,3 +1,6 @@
+https://www.freebuf.com/vuls/351450.html
+https://www.freebuf.com/vuls/347772.html
+
 Windows XP Professional with Service Pack 3 (x86) - CD  2008-05-01  这个版本测试通过
 win7   还没测试
 
