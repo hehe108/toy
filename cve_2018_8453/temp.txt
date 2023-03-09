@@ -1,4 +1,15 @@
- 文件名
+文件名
+cn_windows_10_multiple_editions_version_1703_updated_march_2017_x86_dvd_10189569.iso
+SHA1
+08D8F230E516523AD80B9A8F69ADEA6F77F2836A
+文件大小
+3.22GB
+发布时间
+2017-04-05    也失败
+
+
+
+文件名
 cn_windows_10_multiple_editions_version_1703_updated_july_2017_x86_dvd_10925372.iso
 SHA1
 CB9D41095FFAA29D39928085396632F43F60D4CA
