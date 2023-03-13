@@ -1,3 +1,11 @@
+en_windows_10_multiple_editions_version_1703_updated_march_2017_x86_dvd_10188977.iso
+
+SHA1：1AF7B5B5914B718C3F2F6E58907F51C36F8A03C1
+
+文件大小：3.01GB
+ https://github.com/ze0r/cve-2018-8453-exp 里面的x86 exp运行时屏幕光标等待状态无法输入命令   msfconsole也失败
+
+
 文件名
 cn_windows_10_multiple_editions_version_1703_updated_march_2017_x86_dvd_10189569.iso
 SHA1
