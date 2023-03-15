@@ -62,5 +62,8 @@ set session 1
 run
 
 
+show targets
+ 0   Windows 10 v1703 (Build 15063) x86
+
 
 64位   32位提权都失败
