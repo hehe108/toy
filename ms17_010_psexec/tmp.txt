@@ -15,3 +15,7 @@ A2DDAA7BE3BB73FD87C29D6EF8E1EDF4C764DCD9
 并在本地安全策略中，关闭以下选项，重启之后再测试   本地策略   安全选项
 网络访问：限制对命名管道和共享的匿名访问   关闭
 网络访问：可匿名访问的共享  \
+
+
+
+use exploit/windows/smb/ms17_010_psexec  明天试试 ms17_010_command
