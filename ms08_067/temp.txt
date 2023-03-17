@@ -22,7 +22,7 @@ msf  exploit(ms08_067_netapi) > exploit
 
 
 
-chcp 65001  在xp中别用   会掉
+chcp 65001  在xp中别用   会掉shell
 
 
 
