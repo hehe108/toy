@@ -54,7 +54,7 @@ set lport 50000
 run
 win8 能运行生产的木马 关了 windows defender 就行  clearev 没权限
 管理员 权限 运行 openme.exe 可以 clearev 了
-webcam_stream
+webcam_stream  普通权限就可以看摄像头了
 晚上可以玩玩提权
 cn_windows_7_professional_x64_dvd_x15-65791.iso   2009-08-26
 通过  运行木马后 在利用 bypassuac 漏洞可以进行提权 
